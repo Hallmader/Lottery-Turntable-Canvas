@@ -1,0 +1,89 @@
+
+body,html{
+    -moz-user-select:none;
+    cursor: default;
+}
+.box {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #333;
+    position: relative;
+    .canvas-box {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        margin-top: -300px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: block;
+    }
+    .result {
+        width: 500px;
+        min-height: 500px;
+        right: 0;
+        top: 150px;
+        text-align: center;
+        position: absolute;
+        .start {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            outline: none;
+            background: -webkit-linear-gradient(top, #ffffff 0%, #666666 100%);
+            background: linear-gradient(to bottom, #ffffff 0%, #666666 100%);
+            -webkit-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            &:hover {
+                background: -webkit-linear-gradient(top, #fff 0%, #058 100%);
+                background: linear-gradient(to bottom, #fff 0%, #058 100%);
+                .back {
+                    opacity: 1;
+                }
+                .front {
+                    opacity: 0;
+                }
+            }
+            p {
+                position: absolute;
+                top: 0%;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                font-size: 24px;
+                text-shadow: 1px 1px 0 #666;
+            }
+            .back {
+                opacity: 0;
+                -webkit-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+            }
+            .front {
+                opacity: 1;
+                -webkit-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+            }
+        }
+        .result-text {
+            display: block;
+            color: #fff;
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px #eee;
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-family: 'Microsoft Yahei', Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 0 15px;
+            line-height: 1.5;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+body,
+html {
+  -moz-user-select: none;
+  cursor: default;
+}
+.box {
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #333;
+  position: relative;
+}
+.box .canvas-box {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-top: -300px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+}
+.box .result {
+  width: 500px;
+  min-height: 500px;
+  right: 0;
+  top: 150px;
+  text-align: center;
+  position: absolute;
+}
+.box .result .start {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  outline: none;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #666666 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #666666 100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.box .result .start:hover {
+  background: -webkit-linear-gradient(top, #ffffff 0%, #005588 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #005588 100%);
+}
+.box .result .start:hover .back {
+  opacity: 1;
+}
+.box .result .start:hover .front {
+  opacity: 0;
+}
+.box .result .start p {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 1px 0 #666;
+}
+.box .result .start .back {
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.box .result .start .front {
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.box .result .result-text {
+  display: block;
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #eee;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: 'Microsoft Yahei', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0 15px;
+  line-height: 1.5;
+}
